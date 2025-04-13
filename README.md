@@ -7,9 +7,11 @@ A simple, non-preemptive, cooperative task scheduler.
 - A task can be inserted to list/queue using `OS_TaskCreate(...)` function. A task can be scheduled to be executed for a later time by the `defer_time` parameter.  
 - When a task `STOPPED`, it is dropped from the list to save memory. If need to pause a task `SUSPEND` it, and change its state to `BLOCKED` to resume.  
 - A task function must return its period (`uint32_t` value) which is used to update task next execution time and period info. Hence a task can dynamically arrange period/next execution time of itself.  
+- A demo project can be found [here](https://github.com/eardali/task-scheduler-demo).  
 
 # References
 Referenced from [avr-simple-scheduler](https://github.com/ferenc-nemeth/avr-simple-scheduler) by [ferenc-nemeth](https://github.com/ferenc-nemeth).  
+Origin repo at github.com/eardali.  
 
-# Licence
+# License
 Distributed under the terms of the MIT license.  
